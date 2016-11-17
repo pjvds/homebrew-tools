@@ -9,4 +9,8 @@ class Hookie < Formula
   def install
 	bin.install "hookie"
   end
+
+  test do
+    system "#{bin}/hookie", "--version"
+  end
 end
